@@ -1,20 +1,20 @@
-/*libraries*/
+/* Libraries */
 #include <stdio.h>
 #include <conio.h>
 
 /*Function Prototypes*/
 void calculationBanknote(int );
 
-/* Main function */
+/* Main Function */
 int main(){
 	
-	/*variables*/
+	/* Variables */
 	int requestedMoney = 0;
 	
 	printf("cekmek istediginiz para miktari : ");
 	scanf("%d", &requestedMoney);
 	
-	//check requested conditions
+	/* check requested conditions */
 	if (requestedMoney % 10 == 0)
 	{
 		calculationBanknote(requestedMoney);
