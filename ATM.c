@@ -21,7 +21,10 @@ int main(){
 	}
 
 	else
+	{
 		printf("lütfen 10 ve 10'un katlarini giriniz!!!");
+	}
+		
 	
 	getch();
 
