@@ -38,7 +38,7 @@ int is_prime(int number)
 	/* counter */
 	int i;
 	/* control is_prime */
-	for (i = 3; i < number; i++)
+	for (i = 2; i < number; i++)
 	{
 		if(number % i == 0){
 			return 0;//not prime
