@@ -24,6 +24,7 @@ int main()
 
 	printf("%d\n", toplam);
 
+	getch();
 	return 0;
 }
 
