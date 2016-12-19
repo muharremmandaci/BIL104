@@ -16,17 +16,17 @@ int main(){
 
     /* Right and wrong answers for every questions for students */
 	int students[10][10]= {
-							{1, 0, 1, 1, 1, 1, 1, 1, 1, 0},
-							{1, 0, 1, 1, 0, 1, 1, 1, 1, 0},
-							{1, 0, 1, 0, 0, 1, 0, 1, 1, 0},
-							{1, 0, 1, 0, 0, 1, 0, 1, 1, 0},
-							{0, 0, 1, 0, 0, 1, 1, 1, 1, 0},
-							{0, 0, 1, 0, 0, 1, 1, 1, 1, 0},
-							{0, 1, 0, 0, 0, 0, 0, 1, 0, 0},
-							{1, 0, 1, 0, 0, 0, 0, 1, 0, 0},
-							{1, 0, 0, 0, 0, 0, 1, 1, 1, 0},
-							{1, 0, 0, 0, 0, 0, 1, 1, 1, 0}
-						  };
+						{1, 0, 1, 1, 1, 1, 1, 1, 1, 0},
+						{1, 0, 1, 1, 0, 1, 1, 1, 1, 0},
+						{1, 0, 1, 0, 0, 1, 0, 1, 1, 0},
+						{1, 0, 1, 0, 0, 1, 0, 1, 1, 0},
+						{0, 0, 1, 0, 0, 1, 1, 1, 1, 0},
+						{0, 0, 1, 0, 0, 1, 1, 1, 1, 0},
+						{0, 1, 0, 0, 0, 0, 0, 1, 0, 0},
+						{1, 0, 1, 0, 0, 0, 0, 1, 0, 0},
+						{1, 0, 0, 0, 0, 0, 1, 1, 1, 0},
+						{1, 0, 0, 0, 0, 0, 1, 1, 1, 0}
+				};
 
 	/* Variables */
 	int temp = 0;
@@ -35,7 +35,7 @@ int main(){
 	float total_pq = 0;
 	float grand_sum = 0;
 	float average = 0;
-	float var = 0;//10,96
+	float var = 0;
 	float kr20 = 0;
 	float sum_squares = 0;
 	float standart_deviation = 0 ;
@@ -57,7 +57,6 @@ int main(){
 	var = sum_squares / num_questions;
 	standart_deviation = calculate_standart_deviation(sum_squares, num_questions);
 	kr20 = calculate_kr20(num_questions, total_pq, var);
-	calculate_averages_students_respondents(num_questions, num_students, students, averages_students_respondents);
 
 	/* Prints */
 	printf("toplam_pq : %.2f\n", total_pq);
